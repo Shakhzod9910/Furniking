@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+// Fonts |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+// rubik-300 - latin ===============================================================================================
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""),
+    url("../src/Assets/Fonts/Rubik/rubik-v14-latin-300.woff2") format("woff2"); /* Super Modern Browsers */
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("../src/Assets/Fonts/Rubik/rubik-v14-latin-600.woff2") format("woff2"); /* Super Modern Browsers */
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../src/Assets/Fonts/Rubik/rubik-v14-latin-700.woff2") format("woff2"); /* Super Modern Browsers */
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../src/Assets/Fonts/Rubik/rubik-v14-latin-regular.woff2")
+      format("woff2"); /* Super Modern Browsers */
+}
+
+.container{
+  max-width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Header component styling
+
+.nav{
+  height: 50px;
+  width: 100%;
+  background: #7AC751;
+  h1{
+    font-family: "Rubik";
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    .box{
+      display: flex;
+      select{
+        margin-right: 20px;
+        border: none;
+        font-family: "Rubik";
+        font-size: 16px;
+        color: #fff;
+        outline: none;
+        background: #7AC751;
+      }
+      .box2{
+        border-left: 2.2px solid #fff;
+        padding-left: 20px;
+        span{
+          font-size: 16px;
+          font-family: "Rubik";
+          margin: 0 5px;
+          color: #fff;
+        }
+        .log_btn{
+          font-size: 16px;
+          font-family: "Rubik";
+          border: none;
+          outline: none;
+          background-color: transparent;
+          cursor: pointer;
+          color: #fff;
+
+        }
+       
+      }
+    }
+  }
+  .search_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    .logo{
+      display: flex;
+      align-items: center;
+      h2{
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 24px;
+        color: #555;
+        margin-left: 5px;
+        margin-top: 5px;
+      }
+    }
+    form{
+      border: 2px solid #7AC751;
+      width: 580px;
+      height: 45px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      input{
+        width: 69%;
+        height: 100%;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        outline: none;
+        border: none;
+        font-family: 'Rubik';
+        padding: 20px;
+        font-size: 14px;
+      }
+      select{
+        width: 21%;
+        height: 100%;
+        outline: none;
+        border: none;
+        border-left: 1.5px solid rgba(227, 227, 227, 0.78);
+        padding: 8px;
+        font-family: 'Rubik';
+        font-size: 14px;
+      }
+      button{
+        width: 10%;
+        height: 100%;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border: none;
+        outline: none;
+        background: #7AC751;
+        margin-left: 5px;
+      }
+    }
+    .shops{
+      display: flex;
+      width: 100px;
+      justify-content: space-between;
+    }
+  }
+}
+
+// Home component styling********************************************************************************************
+
+.home{
+  .navbar2{
+    width: 100%;
+    height: 65px;
+    background: #F7F8FA;
+    .nav2{
+      display: flex;
+      height: 100%;
+      .menu{
+        background-color: #7AC751;
+        display: flex;
+        width: 260px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        h1{
+          font-family: 'Rubik';
+          font-size: 16px;
+        }
+        img{
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+      }
+      ul{
+        display: flex;
+        width: 60%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        li{
+          font-family: 'Rubik';
+          font-size: 14px;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          &:hover{
+            color:#7AC751 ;
+          }
+        }
+      }
+    }
+    .collections{
+      height: 450px;
+      display: flex;
+      ul{
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        li{
+          width: 100%;
+          height: 40px;
+          font-family: 'Rubik';
+          font-size: 14px;
+          color: #555;
+          border-bottom:  0.8px solid #E3E3E3;
+          display: flex;
+          align-items: center;
+          background: #F7F8FA;
+          padding-left: 29px;
+        }
+      }
+      .main_hero{
+        height: 96%;
+        width: 76%;
+        margin: 10px;
+        background: linear-gradient(103.4deg, rgba(241, 250, 255, 0.88) 0.89%, #F1FAFF 101.61%);
+        .carousel{
+          display: flex;
+          justify-content: space-between;
+        }
+        .card{
+          border: 1px solid red;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+// Shop component styling============================================================================================
+
+.shop{
+  .opportunites{
+    ul{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 70px;
+      li{
+        display: flex;
+        .title{
+          margin-left: 15px;
+        }
+        h2{
+          font-family: "Rubik";
+          font-size: 20px;
+          color: #555555;
+          margin-bottom: 10px;
+        }
+        p{
+          font-family: 'Rubik';
+          font-size: 14px;
+          color: rgba(81, 81, 81, 0.71);
+        }
+      }
+    }
+  }
+  .discount{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    .left_side_wrapper{
+      height: 510px;
+      width: 56%;
+      background-image: url(./Assets/Images/Mask.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .right_side_wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 42%;
+      .up_item{
+        height: 245px;
+        background-image: url(./Assets/Images/right1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .down_item{
+        height: 245px;
+        background-image: url(./Assets/Images/right2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .discount_title{
+      margin-top: 50px;
+      margin-left: 24px;
+      h1{
+        font-size: 22px;
+        font-family: 'Rubik';
+        color: #555;
+        margin-bottom: 12px;
+      }
+      span{
+        font-size: 20px;
+        font-family: 'Rubik';
+        color: #7AC751;
+        span{
+          font-weight: bold;
+        }
+      }
+      p{
+        font-size: 16px;
+        color: #757575;
+        font-family: 'Rubik';
+        margin-top: 13px;
+        cursor: pointer;
+      }
+    }
+  }
+}
